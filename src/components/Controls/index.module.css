@@ -1,0 +1,8 @@
+.sliders {
+  display: flex;
+  margin: 15px 0;
+}
+
+.slider {
+  margin: 0 10px;
+}

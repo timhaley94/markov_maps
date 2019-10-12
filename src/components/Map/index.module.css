@@ -1,6 +1,31 @@
-.content {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mapContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.map {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend {
+  position: absolute;
+  left: -90px;
+}
+
+.trials {
+  position: absolute;
+  right: -240px;
 }

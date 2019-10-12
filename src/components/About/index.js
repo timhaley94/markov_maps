@@ -1,8 +1,11 @@
 import React from 'react';
+import styles from './index.module.css';
 
 function About() {
   return (
-    <p>About</p>
+    <div className={ styles.container }>
+      <p>About</p>
+    </div>
   );
 }
 

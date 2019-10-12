@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Slider({ label, value, onChange }) {
+function Slider({ className, label, value, onChange }) {
   return (
-    <div>
+    <div className={ className }>
       <p>{ label }</p>
       <input
         type="range"
@@ -18,9 +18,14 @@ function Slider({ label, value, onChange }) {
 }
 
 Slider.propTypes = {
+  className: PropTypes.string,
   label: PropTypes.node.isRequired,
   value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired
+};
+
+Slider.defaultProps = {
+  className: null
 };
 
 export default Slider;

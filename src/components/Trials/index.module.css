@@ -1,0 +1,19 @@
+.container {
+  height: 80%;
+  overflow-y: scroll;
+  width: 200px;
+  display: block;
+  border: 1px solid #6b6b76;
+}
+
+.row {
+  width: 100%;
+}
+
+.headerCell {
+  width: 50%;
+}
+
+.cell {
+  width: 50%;
+}

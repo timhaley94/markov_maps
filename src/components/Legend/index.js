@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   START,
   FINISH,
@@ -8,9 +9,9 @@ import {
 } from '../../logic';
 import { Element } from '..';
 
-function Legend() {
+function Legend({ className }) {
   return (
-    <div>
+    <div className={ className }>
       <Element value={ START } />
       <Element value={ FINISH } />
       <Element value={ PATH } />
@@ -19,5 +20,13 @@ function Legend() {
     </div>
   );
 }
+
+Legend.propTypes = {
+  className: PropTypes.string
+};
+
+Legend.defaultProps = {
+  className: null
+};
 
 export default Legend;
