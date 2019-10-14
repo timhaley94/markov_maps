@@ -10,7 +10,7 @@ import {
 import styles from './index.module.css';
 
 function Map() {
-  const [map] = useMap();
+  const [map, path] = useMap();
 
   return (
     <div className={ styles.container }>
@@ -24,7 +24,16 @@ function Map() {
                   {
                     row.map(
                       (cell, j) => (
-                        <Cell key={ `cell-${i}-${j}` } i={ i } j={ j } />
+                        <Cell
+                          key={ `cell-${i}-${j}` }
+                          i={ i }
+                          j={ j }
+                          inPath={
+                            path
+                              ? path.some(([x, y]) => x === i && y === j)
+                              : false
+                          }
+                        />
                       )
                     )
                   }
