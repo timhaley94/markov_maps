@@ -8,6 +8,7 @@
     "react-dnd": "^9.4.0",
     "react-dnd-html5-backend": "^9.4.0",
     "react-dom": "^16.10.1",
+    "react-github-ribbon": "^1.0.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
