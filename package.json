@@ -9,7 +9,7 @@
     "react-dnd-html5-backend": "^9.4.0",
     "react-dom": "^16.10.1",
     "react-github-ribbon": "^1.0.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
